@@ -1,0 +1,2 @@
+base: configs/tsmf/metafile.yml
+num_classes: 2759

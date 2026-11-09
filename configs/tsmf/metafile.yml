@@ -1,0 +1,29 @@
+in_channels: 21
+out_channels_G: 21
+top_k: 40
+max_len: 2000
+msa_cutoff: 0.8
+msa_penalty: 4.5
+msa_embedding_dim: 21
+msa_encoding_strategy: emb_plus_one_hot
+ngf: 64
+netG: resnet_4blocks
+no_antialias: false
+no_antialias_up: false
+load_gen: null
+freeze_gen: null
+ndf: 64
+netD: resnet50
+replace_stride_with_dilation: 
+  - false
+  - false
+  - false
+no_dropout: false
+normG: instance
+normD: batch
+init_type: xavier
+init_gain: 0.02
+gpu_ids: 
+  - 0
+  - 1
+no_jit: false
